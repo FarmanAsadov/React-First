@@ -1,38 +1,55 @@
-.App {
+body {
+  background-color: black;
+  font-family: "Courier New", Courier, monospace;
+}
+#root {
   text-align: center;
+  color: #fff;
+  font-size: 1.8rem;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-size: 6rem;
+  margin: 15px 0 0 0;
+  padding: 0;
+  letter-spacing: 5px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.btns {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+button {
+  width: 40%;
+  padding: 10px;
+  background-color: transparent;
+  border: 10px solid;
+  border-radius: 15px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin: 20px;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:hover {
+  transition: 0.2s ease-in-out;
+  box-shadow: 0px 0px 15px #fff;
+}
+
+.green {
+  color: green;
+  border-color: green;
+}
+
+.yellow {
+  color: yellow;
+  border-color: yellow;
+}
+.orange {
+  color: orangered;
+  border-color: orangered;
+}
+.red {
+  color: red;
+  border-color: red;
 }

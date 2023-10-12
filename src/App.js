@@ -1,24 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { useState } from "react";
 
 function App() {
+  const [select, setSelect] = useState("");
+
+  const handleClick = (e) => {
+    setSelect(e.target.value);
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <h1>LIFE</h1>
+      <p>
+        Select difficulty: <span>{select}</span>
+      </p>
+      <div class="btns">
+        <button class="green" onClick={handleClick} value="Easy">
+          Easy
+        </button>
+        <button class="yellow" onClick={handleClick} value="Medium">
+          Medium
+        </button>
+        <button class="orange" onClick={handleClick} value="Hard">
+          Hard
+        </button>
+        <button class="red" onClick={handleClick} value="2023">
+          2023
+        </button>
+      </div>
+    </>
   );
 }
 
